@@ -24,8 +24,8 @@ public class MiniProjectConnectMysql { //진행할 프로젝트 이름
         // result grid, action output 확인
         while (rs.next()){
             System.out.print("ID: " + rs.getInt("ID"));
-            System.out.print(", Age: " + rs.getString("Name"));
-            System.out.println(", First: " + rs.getInt("Population"));
+            System.out.print(", Name: " + rs.getString("Name"));
+            System.out.println(", Population: " + rs.getInt("Population"));
         }
         } catch (SQLException e) {
            
